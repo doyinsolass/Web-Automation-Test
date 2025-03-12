@@ -1,6 +1,6 @@
 # Selenium Blog Signup Automation 📰
 
-This project is a basic web automation test for signing up on the Selenium Blog website using Python and Selenium WebDriver. The test script automates the process of filling out the signup form, entering an email and verifying the success message.
+This project is a basic web automation test for signing up on the Selenium Blog website using Python and Selenium WebDriver. The test script automates the process of filling out the signup form, entering an email and verifying the success message.  
 
 ## Prerequisites
 
