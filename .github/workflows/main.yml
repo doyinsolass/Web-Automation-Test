@@ -1,25 +1,16 @@
-name: Basic Workflow
+name: Python Tests
 
-on: push
+on:
+  push:
+  pull_request:
 
 jobs:
-  ubuntu:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - run: date 
-
-  windows:
-    runs-on: windows-latest
-    steps:
-      - run: date 
-
-  macos:
-    runs-on: macos-latest
-    steps:
-      - run: date 
-
-  depends:
-    needs: [ubuntu, windows, macos]
-    runs-on: macos-latest
-    steps:
-      - run: date 
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run unit tests
+        run: python -m unittest test_python_learning.py
