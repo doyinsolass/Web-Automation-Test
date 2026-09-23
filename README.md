@@ -42,15 +42,25 @@ Before you start, make sure that you have the following apps on your machine:
 2. **Run the test script:**
 
     ```sh
-    python test_signup.py
+    python test.py
     ```
+
+## Learning Python with this Project
+
+If you are learning Python, this repository is a good beginner example of:
+
+- writing a `unittest.TestCase` class
+- using variables and formatted strings (`f"user{timestamp}"`)
+- calling functions from imported modules (`time.time()`, Selenium methods)
+- making assertions with `self.assertEqual(...)`
+
+Try changing one value at a time (for example the username prefix) and re-running the script to observe how Python code behaves.
 
 ## Test Script Overview
 
-The test script `test_signup.py` performs the following actions:
+The test script `test.py` performs the following actions:
 
 1. Opens the Firefox browser and navigates to the Selenium Blog signup page.
 2. Fills out the signup form with a unique username and email address.
 3. Submits the form.
 4. Verifies that the success message is displayed.
-
